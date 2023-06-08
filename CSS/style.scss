@@ -1,15 +1,17 @@
 @use "_resets";
 
-$red: hsl(0, 78%, 62%);
-$cyan: hsl(180, 62%, 55%);
-$orange: hsl(34, 97%, 64%);
-$blue: hsl(212, 86%, 64%);
-$very-dark-blue: hsl(234, 12%, 34%);
-$grayish-blue: hsl(229, 6%, 66%);
-$very-light-gray: hsl(0, 0%, 98%);
+$colors: (
+  red: #ea5353,
+  cyan: #45d3d3,
+  orange: #fcaf4a,
+  blue: #549ef2,
+);
+$very-dark-blue: #4c4e61;
+$grayish-blue: #a3a5ae;
+$very-light-gray: #fafafa;
 
 body {
-  font: 15px "Poppins", sans-serif;
+  font: 0.9375rem "Poppins", sans-serif;
   color: $grayish-blue;
   padding: 2.15em;
   background: $very-light-gray;
@@ -34,6 +36,52 @@ body {
   p {
     font-size: 1.05rem;
     line-height: 1.5em;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.75em;
+  padding: 2em 1.75em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0.2em 0.5em 12px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    margin-top: 0.75em;
+    line-height: 1.4em;
+  }
+
+  img {
+    width: 3.7em;
+    margin-left: auto;
+    margin-top: 1.8em;
+  }
+}
+
+.card:last-child {
+  margin-bottom: 4em;
+}
+
+.colored-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0.225em;
+  width: 110%;
+  background-color: blue;
+}
+
+@each $color, $hex-code in $colors {
+  .#{$color}-line {
+    background-color: $hex-code;
   }
 }
 

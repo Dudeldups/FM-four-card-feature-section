@@ -5,10 +5,10 @@
 }
 
 body {
-  font: 15px "Poppins", sans-serif;
-  color: hsl(229, 6%, 66%);
+  font: 0.9375rem "Poppins", sans-serif;
+  color: #a3a5ae;
   padding: 2.15em;
-  background: hsl(0, 0%, 98%);
+  background: #fafafa;
 }
 
 .top {
@@ -30,9 +30,62 @@ body {
   line-height: 1.5em;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.75em;
+  padding: 2em 1.75em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0.2em 0.5em 12px rgba(0, 0, 0, 0.1);
+}
+.card h2 {
+  font-size: 1.3rem;
+}
+.card p {
+  margin-top: 0.75em;
+  line-height: 1.4em;
+}
+.card img {
+  width: 3.7em;
+  margin-left: auto;
+  margin-top: 1.8em;
+}
+
+.card:last-child {
+  margin-bottom: 4em;
+}
+
+.colored-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0.225em;
+  width: 110%;
+  background-color: blue;
+}
+
+.red-line {
+  background-color: #ea5353;
+}
+
+.cyan-line {
+  background-color: #45d3d3;
+}
+
+.orange-line {
+  background-color: #fcaf4a;
+}
+
+.blue-line {
+  background-color: #549ef2;
+}
+
 .bold,
 h2 {
-  color: hsl(234, 12%, 34%);
+  color: #4c4e61;
 }
 
 .attribution {

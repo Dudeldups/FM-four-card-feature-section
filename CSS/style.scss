@@ -10,11 +10,17 @@ $very-dark-blue: #4c4e61;
 $grayish-blue: #a3a5ae;
 $very-light-gray: #fafafa;
 
+$card-width: 20.8em;
+
 body {
   font: 0.9375rem "Poppins", sans-serif;
   color: $grayish-blue;
-  padding: 2.15em;
+  padding: 2.15em 0.4em;
   background: $very-light-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .top {
@@ -36,7 +42,16 @@ body {
   p {
     font-size: 1.05rem;
     line-height: 1.5em;
+    max-width: 30em;
   }
+}
+
+.cards {
+  margin-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -66,10 +81,6 @@ body {
   }
 }
 
-.card:last-child {
-  margin-bottom: 4em;
-}
-
 .colored-line {
   position: absolute;
   left: 0;
@@ -95,5 +106,38 @@ h2 {
   text-align: center;
   a {
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@media only screen and (min-width: 22.5rem) {
+  body {
+    padding: 2.15em;
+  }
+
+  .card {
+    width: $card-width;
+  }
+}
+
+@media only screen and (min-width: 43rem) {
+  .card-group {
+    display: flex;
+    gap: 2em;
+  }
+}
+
+@media only screen and (min-width: 68rem) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .card-group {
+    display: block;
+  }
+
+  .card {
+    width: $card-width * 1.05;
   }
 }

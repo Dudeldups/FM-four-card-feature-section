@@ -1,0 +1,51 @@
+@use "_resets";
+
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+body {
+  font: 15px "Poppins", sans-serif;
+  color: $grayish-blue;
+  padding: 2.15em;
+  background: $very-light-gray;
+}
+
+.top {
+  opacity: 95%;
+  text-align: center;
+  margin: 4em 0;
+
+  h1 {
+    font-weight: 200;
+    font-size: 1.6rem;
+  }
+
+  .bold {
+    margin: 0.25em 0 0.75em;
+    display: block;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.5em;
+  }
+}
+
+.bold,
+h2 {
+  color: $very-dark-blue;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

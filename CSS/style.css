@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 15px "Poppins", sans-serif;
+  color: hsl(229, 6%, 66%);
+  padding: 2.15em;
+  background: hsl(0, 0%, 98%);
+}
+
+.top {
+  opacity: 95%;
+  text-align: center;
+  margin: 4em 0;
+}
+.top h1 {
+  font-weight: 200;
+  font-size: 1.6rem;
+}
+.top .bold {
+  margin: 0.25em 0 0.75em;
+  display: block;
+  font-weight: 600;
+}
+.top p {
+  font-size: 1.05rem;
+  line-height: 1.5em;
+}
+
+.bold,
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
